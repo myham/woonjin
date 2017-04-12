@@ -60,6 +60,7 @@ body,div,p,span{
 	top: 28%;
 	right: 1%;
 	z-index: 99;
+	cursor: pointer;
 	/*display: none;*/
 }
 .sideBorder ul{
@@ -71,13 +72,18 @@ body,div,p,span{
 	height: 10px;
 	background: white;
 	border-radius: 50%;
-	margin-top: 50%;
+	margin-top: 16%;
+	margin-left:18%;
 }
-
+.baoOneLi{
+	width: 16px;
+	height: 16px;
+	margin-top: 40%;
+	transition:all 1s;
+}
 .wrapperAll{
   width: 100%;
   height: 100vh;
-  background: #ccc;
   position: fixed;
 }
 .wrapperAll > ul {
@@ -99,6 +105,7 @@ body,div,p,span{
   /*background-size: cover;*/
   /*z-index: -99;*/
   /*display: none;*/
+  overflow: hidden;
 }
 
 .bgOne{
@@ -170,11 +177,10 @@ body,div,p,span{
 	height: 80px;
 	float: left;
 	z-index: 99;
-	/*background: gray;*/
 	margin-top:46%;
 }
 .wrapperAll > ul > li:nth-child(1) .firstPart_right .topText ul{
-	width: 52%;
+	width: 62%;
 	height: 80px;
 }
 .wrapperAll > ul > li:nth-child(1) .firstPart_right .topText ul li{
@@ -213,7 +219,8 @@ body,div,p,span{
   z-index: -9;
 }*/
 .wrapperAll ul li:nth-child(2) {
-	display: none;
+	overflow: hidden;
+	/*display: none;*/
 }
 .bgTwo{
 	width: 100%;
@@ -399,27 +406,27 @@ body,div,p,span{
   -webkit-animation: load2 2s infinite ease;
   animation: load2 2s infinite ease;
 }
-/*.logoAuto{
-	transform: translateY(-200%);
-}*/
-
-
-
-.header_left .logoAuto{
+.logoAuto{
 	animation: logoAuto 1s;
 }
 @keyframes logoAuto {
-  10%{
-    transform: translateY(-100%);
+  0%{
+    transform: translateY(-600%);
   }
-  50% {
-    transform: translateY(50%);
+  30% {
+    transform: translateY(100%);
+  }
+  60%{
+  	transform: translateY(0%);
+  }
+  80%{
+  	transform: translateY(-50%);
   }
   100%{
   	transform: translateY(0%);
   }
 }
-.bannerImg{
+.active  .bannerImg{
 	animation: bannerImg 1s linear 1s both;
 }
 @keyframes bannerImg {
@@ -434,7 +441,7 @@ body,div,p,span{
   }
 }
 
-.textCenter{
+.active .textCenter{
 	animation: textCenter 1.5s linear 1s both;
 }
 @keyframes textCenter{
@@ -446,7 +453,7 @@ body,div,p,span{
 	}
 	
 }
-.topText{
+.active .topText{
 	animation: topText 1.5s linear 2.5s both;
 }
 @keyframes topText{
@@ -472,7 +479,7 @@ body,div,p,span{
 		transform: scale(1);
 	}
 }
-.hand{
+.active .hand{
 	animation: hand 1.5s linear;
 }
 @keyframes hand{
@@ -484,6 +491,62 @@ body,div,p,span{
 	}
 	
 }
+
+
+.active .second_about{
+	animation: second_about 1.5s;
+}
+@keyframes second_about{
+	from{
+		transform: translateY(-500%);
+	}
+	to{
+		transform: translateY(0%);
+	}
+}
+
+.active .aboutOur {
+	animation: aboutOur 1s linear 1s both ;
+}
+@keyframes aboutOur{
+	from{
+		transform: translateY(900%);
+	}
+	to{
+		transform: translateY(0%);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
