@@ -8,8 +8,9 @@ window.addEventListener('load',function(){
 				cri = document.getElementsByClassName('side')[0],
 				on=cri.getElementsByTagName('li'),
 				bao=cri.getElementsByTagName('div'),
+				scrollBtn=document.getElementsByClassName('first_btn')[0],
 	      head=document.getElementsByClassName('header')[0];
-	      alert($('.allUl>li').length)
+//	      alert($('.allUl>li').length)
 	//绑定滚轮事件
 			window.addEventListener(isFirefox ? 'DOMMouseScroll' : "mousewheel", fn, false);
 
@@ -30,19 +31,27 @@ window.addEventListener('load',function(){
 
 			function two(a) {  //加载函数
 				now += a
-				if (now < -6) {
-					now = -6
+				if (now < -5) {
+					now = -5
 //					alert(1)
 				} else if (now > 0) {
 					now = 0
 				}
-//				else if(now == 0){
-//					head.style.transition='0.5s'
-//					head.style.background='#7D7D7D';
-//				}else if(now == -1){
-//					head.style.transition='0.5s'
-//					head.style.background='rgba(0,0,0,0.1)';
-//				}
+				else if(now == 0){
+					head.style.transition='0.5s'
+					head.style.background='#7D7D7D';
+					scrollBtn.style.opacity='1';
+					
+				}else if(now == -1){
+					head.style.transition='0.5s'
+					head.style.background='rgba(0,0,0,0.1)';
+					scrollBtn.style.opacity='0';
+				}else if(now == -2){
+					head.style.transition='0.5s'
+					head.style.background='rgba(255,255,255,0.2)';
+					scrollBtn.style.opacity='1';
+				}
+				
 				
 				all.style.top = (now * 100) + 'vh';				
 								
@@ -97,6 +106,7 @@ window.addEventListener('load',function(){
 	timer = setInterval(auto,3000);
 	
 //nav部分	
+    
 	$('.header_right ul li:nth-child(1)').hover(function(){
 		$('.header_right ul li:nth-child(1) p').text('HOME');
 		$('.header_right ul li:nth-child(1)').css('transform','translateY(-25px)');

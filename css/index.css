@@ -95,19 +95,10 @@ body,div,p,span{
   width: 100%;
   height: 100vh;
   display: block;
+  overflow: hidden;
   position: relative;
 }
 /*第一层页面*/
-.wrapperAll > ul > li:nth-child(1) {
-  /*display: flex;*/
-  /*padding: 0 10%;*/
-  /*background: url(../img/allchild34.jpg) no-repeat;*/
-  /*background-size: cover;*/
-  /*z-index: -99;*/
-  /*display: none;*/
-  overflow: hidden;
-}
-
 .bgOne{
 	width: 100%;
 	height: 100vh;
@@ -143,6 +134,7 @@ body,div,p,span{
 	position: fixed;
 	bottom: 5%;
 	left: 45%;
+	transition: all 0.5s;
 	/*display: none;*/
 }
 .wrapperAll > ul > li:nth-child(1) .first_btn > span{
@@ -218,10 +210,6 @@ body,div,p,span{
   display: none;
   z-index: -9;
 }*/
-.wrapperAll ul li:nth-child(2) {
-	overflow: hidden;
-	/*display: none;*/
-}
 .bgTwo{
 	width: 100%;
 	height: 100vh;
@@ -506,27 +494,94 @@ body,div,p,span{
 }
 
 .active .aboutOur {
-	animation: aboutOur 1s linear 1s both ;
+	animation: aboutOur 1s ;
 }
 @keyframes aboutOur{
 	from{
-		transform: translateY(900%);
+		transform: translateY(5000%);
 	}
 	to{
 		transform: translateY(0%);
 	}
 }
 
+.active .secondText{
+	animation:secondText 1s linear 1s both;
+}
+@keyframes secondText{
+	from{
+		transform: scale(0);
+	}
+	to{
+		transform: scale(1);
+	}
+}
 
+.active .banTwoImg{
+	animation: banTwoImg 1s linear 2.3s both;
+}
+@keyframes banTwoImg{
+	0%{
+		transform: rotateX(90deg) rotateY(15deg) ;
+	}
+	30%{
+		transform: rotateX(0) rotateY(0deg);
+	}
+	60%{
+		transform: rotateX(30deg) rotateY(10deg);
+	}
+	90%{
+		transform: rotateX(0) rotateY(9deg);
+	}
+	100%{
+		transform: rotateX(0) rotateY(0deg);
+	}
+}
 
+.active .readMore{
+	animation:readMore 0.6s linear 2.4s both;
+}
+@keyframes readMore{
+	from{
+		transform:translateY(200%);
+	}
+	to{
+		transform: translateY(0);
+	}
+}
 
-
-
-
-
-
-
-
+/*第三部分*/
+.bgThree{
+	width: 100%;
+	height: 100vh;	
+	position: absolute;
+	z-index: -99;
+}
+.bgThree img{
+	width: 100%;
+	height: 100vh;
+	z-index: -99;
+}
+.whiteBg{
+	width: 100%;
+	height: 100vh;
+	background: rgba(255,255,255,0.2);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
+.banTwoCenter{
+	width:calc(100% - 4%);
+	margin-left: 2%;
+	margin-top: 7%;
+	height: 570px;
+	position: absolute;
+}
+.banTwoCenter img{
+	width: 100%;
+	height: 100%;
+}
 
 
 
