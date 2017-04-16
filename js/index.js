@@ -48,8 +48,9 @@ window.addEventListener('load',function(){
 					scrollBtn.style.opacity='0';
 				}else if(now == -2){
 					head.style.transition='0.5s'
-					head.style.background='rgba(255,255,255,0.2)';
+					head.style.background='rgba(255,255,255,0.3)';
 					scrollBtn.style.opacity='1';
+//					scrollBtn.style.zIndex='9999';
 				}
 				
 				
