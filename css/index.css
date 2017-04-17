@@ -552,21 +552,28 @@ body,div,p,span{
 
 /*第三部分*/
 .wrapperAll > ul > li:nth-child(1){
-	display: none;
+	/*display: none;*/
 }
 .wrapperAll > ul > li:nth-child(2){
-	display: none;
+	/*display: none;*/
+	z-index: -999;
 }
+/*.wrapperAll > ul > li:nth-child(3){
+	display: none;
+	z-index: -999;
+}*/
 .bgThree{
 	width: 100%;
 	height: 100vh;	
 	position: absolute;
-	z-index: -99;
+	z-index: 99;
 }
 .bgThree img{
 	width: 100%;
 	height: 100vh;
-	z-index: -99;
+	position: relative;
+	z-index: 1;
+	/*pointer-events: none;*/
 }
 .whiteBg{
 	width: 100%;
@@ -634,7 +641,8 @@ body,div,p,span{
 	float: left;
 	position: absolute;
 	top: 25%;
-	left:40%;	
+	left:40%;
+	z-index: 999;	
 }
 .bgCterTop{
 	width: 100%;
@@ -702,18 +710,21 @@ body,div,p,span{
 }
 .bgThreeRight{
 	width: 20%;
-	height: 220px;
+	height: 240px;
 	float: left;
 	position: absolute;
 	top: 30%;
 	left: 76%;
+	z-index: 999;
 }
 .bgThreeRight_top{
 	width: 100%;
 	height: 45px;
+	position: relative;
 	float: left;
-	margin-top: 2%;
+	border: 1px solid white;
 }
+
 .bgThreeRight_top span:nth-child(1){
 	display: block;
 	width: 32%;
@@ -729,30 +740,223 @@ body,div,p,span{
 	display: block;
 	width: 67%;
 	height: 43px;
-	border: 1px solid white;
+	
 	float: left;
 	line-height: 43px;
-	/*text-align: left;*/
 	text-indent: 5%;
 	color: white;
 	font-size: 20px;
 }
-.borderHover:nth-child(1){
-	margin-top:10%;
+.bgThreeRight_top:nth-child(1){
+	margin-top: 10%;
+	
 }
-.borderHover:nth-child(2){
-	margin-top:10%;
+.bgThreeRight_top:nth-child(2){
+	margin-top: 10%;
 }
-.borderHover:nth-child(3){
-	margin-top:10% ;
+.bgThreeRight_top:nth-child(3){
+	margin-top: 10%;
 }
 .borderHover{
-	width: 100%;
+	width: 110%;
 	height: 55px;
 	float: left;
-	border: 1px solid white;
-	padding: 0 2% 0 2%;	
+    cursor: pointer;
+    transition: all 1s;
+    border: 1px solid white;
+    overflow: hidden;
 }
+
+.doger {
+	width: calc(100%);
+	height: calc(100%);
+	/*background: red;*/
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	border: 1px #fff solid;
+	z-index: -1;
+	transition: .3s;
+}
+
+.borderHover:nth-child(2){
+	margin-top: -19%;
+	margin-left: -10%;
+	/*opacity: 0;*/
+	
+}
+
+.bgThreeRight_top:hover {
+	border: 1px solid black;
+}
+
+.bgThreeRight_top:hover .doger {
+	transform: scaleX(1.2) scaleY(1.4);
+	opacity: 0;
+	z-index: 99;
+	/*top: -10%;*/
+}
+.bgThreeRight_top:hover .bgThreeRight_top span {
+	border: none;
+}
+
+
+.bgThreeRight_top:hover span:nth-child(1) {
+	/*color: red;*/
+	text-shadow: 0px 0px 0.1px skyblue;
+}
+
+.bgThreeRight_top:hover span:nth-child(2) {
+	box-shadow: 0 0  5px #888888 inset;
+} 
+
+.borderHover:nth-child(3){
+	margin-top: 10%;
+}
+
+.active .bathI{
+	animation:bathI 1.2s;
+}
+@keyframes bathI{
+	from{
+		transform:translateY(300%);
+	}
+	to{
+		transform: translateY(0);
+	}
+}
+.active .bgTwoCter{
+	animation:bgTwoCter 1.5s linear 0.5S both;
+}
+@keyframes bgTwoCter{
+	from{
+		transform:translateX(-600%);
+	}
+	to{
+		transform: translateX(0);
+	}
+} 
+.active .bgTwoLeft{
+	animation:bgTwoLeft 1.5s linear 0.5S both;
+}
+@keyframes bgTwoLeft{
+	from{
+		transform:translateX(-600%);
+	}
+	to{
+		transform: translateX(0);
+	}
+} 
+
+.active .bgThreeRight_topOne{
+	animation:bgThreeRight_topOne 2.5s linear 2.3s both;
+}
+@keyframes bgThreeRight_topOne{
+	0%{
+		transform:translateX(300%);
+	}
+	20%{
+		transform: translateX(0);
+	}
+	40%{
+		transform: translateX(8%);
+	}
+	60%{
+		transform: translateX(0);
+	}
+	80%{
+		transform: translateX(3%);
+	}
+	100%{
+		transform: translateX(0);
+	}
+} 
+.active .bgThreeRight_TwoOne{
+	animation:bgThreeRight_TwoOne 2.5s linear 2.4S both;
+}
+@keyframes bgThreeRight_TwoOne{
+	0%{
+		transform:translateX(300%);
+	}
+	20%{
+		transform: translateX(0);
+	}
+	40%{
+		transform: translateX(10%);
+	}
+	60%{
+		transform: translateX(0);
+	}
+	80%{
+		transform: translateX(5%);
+	}
+	100%{
+		transform: translateX(0);
+	}
+} 
+.active .bgThreeRight_ThreeOne{
+	animation:bgThreeRight_ThreeOne 2.5s linear 2.5S both;
+}
+@keyframes bgThreeRight_ThreeOne{
+	0%{
+		transform:translateX(300%);
+	}
+	20%{
+		transform: translateX(0);
+	}
+	40%{
+		transform: translateX(10%);
+	}
+	60%{
+		transform: translateX(0);
+	}
+	80%{
+		transform: translateX(5%);
+	}
+	100%{
+		transform: translateX(0);
+	}
+}
+
+@keyframes doge {
+	from{
+		transform: translateY(-100vh);
+	}to{
+		transform: translateY(0);
+	}
+}
+
+@keyframes doge1 {
+	from{
+		transform: translateY(100vh);
+	}to{
+		transform: translateY(0);
+	}
+}
+
+.active .wrapper_a {
+	animation:doge 1s linear both;
+}
+
+.wrapper_a {
+	/*opacity: 0;*/
+	/*transform: translateY(-vh);*/
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

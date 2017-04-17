@@ -36,6 +36,7 @@ window.addEventListener('load',function(){
 //					alert(1)
 				} else if (now > 0) {
 					now = 0
+					
 				}
 				else if(now == 0){
 					head.style.transition='0.5s'
@@ -65,7 +66,7 @@ window.addEventListener('load',function(){
 						bao[i].style.border='1px solid white';
 						bao[i].style.borderRadius='50%';
 					} else {
-						obj[i].className = '';						
+						obj[i].className = '';	
 					    on[i].style.background='';
 					    bao[i].style.border='';
 					    bao[i].style.borderRadius='';
@@ -154,17 +155,17 @@ window.addEventListener('load',function(){
 	},function(){
 		$('.header_right ul li:nth-child(6) p').text('concact');
 		$('.header_right ul li:nth-child(6)').css('transform','translateY(0px)');		
-	})
+	});
 	
+//	$('.borderHover').hover(function(){
+//		$('.borderHover:nth-child(2)').css('opacity','1')
+//	    $('.bgThreeRight_top:nth-child(1)').css('border','1px solid black')
+//	},function(){
+//		
+//	})
+
 	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	
 	
 	
