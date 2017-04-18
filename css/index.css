@@ -243,6 +243,7 @@ body,div,p,span{
 	width: 57%;
 	height: 100vh;
 	float: right;
+	z-index: -99;
 }
 .second_about{
 	width: 100%;
@@ -253,7 +254,6 @@ body,div,p,span{
 	color: black;
 	font-size: 48px;
 	line-height: 100px;
-	z-index: 99;
 }
 .aboutOur{
 	width: 100%;
@@ -311,6 +311,7 @@ body,div,p,span{
 	text-align: center;
 	line-height: 40px;
 	cursor: pointer;
+	z-index: 999999999999999999;
 }
 .btnRight{
 	width: 40px;
@@ -552,11 +553,13 @@ body,div,p,span{
 
 /*第三部分*/
 .wrapperAll > ul > li:nth-child(1){
-	/*display: none;*/
+	display: none;
 }
 .wrapperAll > ul > li:nth-child(2){
-	/*display: none;*/
-	z-index: -999;
+	display: none;
+}
+.wrapperAll > ul > li:nth-child(3){
+	display: none;
 }
 /*.wrapperAll > ul > li:nth-child(3){
 	display: none;
@@ -943,12 +946,86 @@ body,div,p,span{
 	/*transform: translateY(-vh);*/
 } 
 
-
-
-
-
-
-
+/*第三部分*/
+.bgFour{
+	width: 100%;
+	height: 100vh;
+	background: url(../img/allchild22.jpg) no-repeat;
+	background-size: 120% 200%;
+	background-position-x: 80%;
+	background-position-y: 15%;
+}
+.bgFour > .bgFourLeft{
+	width: 30%;
+	height: 100vh;
+	float: left;
+	padding-left: 10%;
+}
+.bgFour > .bgFourLeft>.Mrsima{
+	width: 100%;
+	height: 50px;
+	float: left;
+	margin-top: 50%;
+	text-align: right;
+	color: black;
+	font-size: 24px;
+}
+.simaText{
+	width: 100%;
+	height: 150px;
+	float: left;
+	color: black;
+    font-size: 15px;
+	line-height: 30px;
+}
+.MrsLiu{
+	width: 100%;
+	height: 50px;
+	float: left;
+	margin-top: 6%;
+	text-align: right;
+	color: black;
+	font-size: 24px;
+}
+.MrsLiuText{
+	width: 100%;
+	height: 150px;
+	float: left;
+	color: black;
+    font-size: 15px;
+	line-height: 30px;
+}
+.bgFourCenetr{
+	width: 10%;
+	height: 85vh;
+	float: left;
+	margin-top: 15vh;
+}
+.fourImgOne{
+	width: 82%;
+	height: 110px;
+	float: left;
+	border-radius: 50%;
+	margin-left: 10%;
+	overflow: hidden;
+}
+.fourImgOne>img{
+	width: 100%;
+	height: 100%;
+}
+.fourImgTwo{
+	width: 82%;
+	height: 110px;
+	float: left;
+	border-radius: 50%;
+	margin-top: 10px;
+	margin-left: 10%;
+	overflow: hidden;
+}
+.fourImgTwo>img{
+	width: 100%;
+	height: 100%;
+}
 
 
 

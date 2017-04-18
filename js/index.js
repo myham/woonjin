@@ -157,12 +157,7 @@ window.addEventListener('load',function(){
 		$('.header_right ul li:nth-child(6)').css('transform','translateY(0px)');		
 	});
 	
-//	$('.borderHover').hover(function(){
-//		$('.borderHover:nth-child(2)').css('opacity','1')
-//	    $('.bgThreeRight_top:nth-child(1)').css('border','1px solid black')
-//	},function(){
-//		
-//	})
+      
 
 	
 
