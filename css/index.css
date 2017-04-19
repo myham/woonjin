@@ -553,13 +553,13 @@ body,div,p,span{
 
 /*第三部分*/
 .wrapperAll > ul > li:nth-child(1){
-	display: none;
+	/*display: none;*/
 }
 .wrapperAll > ul > li:nth-child(2){
-	display: none;
+	/*display: none;*/
 }
 .wrapperAll > ul > li:nth-child(3){
-	display: none;
+	/*display: none;*/
 }
 /*.wrapperAll > ul > li:nth-child(3){
 	display: none;
@@ -956,27 +956,27 @@ body,div,p,span{
 	background-position-y: 15%;
 }
 .bgFour > .bgFourLeft{
-	width: 30%;
+	width: 25%;
 	height: 100vh;
 	float: left;
 	padding-left: 10%;
+	padding-right: 5%;
 }
-.bgFour > .bgFourLeft>.Mrsima{
+.Mrsima{
 	width: 100%;
 	height: 50px;
 	float: left;
-	margin-top: 50%;
 	text-align: right;
 	color: black;
-	font-size: 24px;
+	font-size: 22px;
 }
 .simaText{
 	width: 100%;
 	height: 150px;
 	float: left;
 	color: black;
-    font-size: 15px;
-	line-height: 30px;
+    font-size: 14px;
+	line-height: 25px;
 }
 .MrsLiu{
 	width: 100%;
@@ -985,15 +985,15 @@ body,div,p,span{
 	margin-top: 6%;
 	text-align: right;
 	color: black;
-	font-size: 24px;
+	font-size: 22px;
 }
 .MrsLiuText{
 	width: 100%;
 	height: 150px;
 	float: left;
 	color: black;
-    font-size: 15px;
-	line-height: 30px;
+    font-size: 14px;
+	line-height: 25px;
 }
 .bgFourCenetr{
 	width: 10%;
@@ -1007,11 +1007,12 @@ body,div,p,span{
 	float: left;
 	border-radius: 50%;
 	margin-left: 10%;
-	overflow: hidden;
+	overflow: hidden;	
 }
 .fourImgOne>img{
 	width: 100%;
 	height: 100%;
+	cursor: pointer;
 }
 .fourImgTwo{
 	width: 82%;
@@ -1025,7 +1026,228 @@ body,div,p,span{
 .fourImgTwo>img{
 	width: 100%;
 	height: 100%;
+	cursor: pointer;	
 }
+.fourImgThree{
+	width: 82%;
+	height: 110px;
+	float: left;
+	border-radius: 50%;
+	margin-top: 10px;
+	margin-left: 10%;
+	overflow: hidden;
+}
+.fourImgThree>img{
+	width: 100%;
+	height: 100%;
+	cursor: pointer;	
+}
+.fourImgFour{
+	width: 82%;
+	height: 110px;
+	float: left;
+	border-radius: 50%;
+	margin-top: 10px;
+	margin-left: 10%;
+	overflow: hidden;
+}
+.fourImgFour>img{
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+.bgFourRight{
+	width: 30%;
+	height: 100vh;
+	float: left;
+	padding-left: 4%;
+}
+.MrsWang{
+	width: 100%;
+	height: 50px;
+	float: left;
+	margin-top: 25%;
+	text-align: left;
+	color: white;
+	font-size: 22px;
+}
+.wangText{
+	width: 100%;
+	height: 150px;
+	float: left;
+	color: white;
+    font-size: 14px;
+	line-height: 25px;
+}
+.mrsLiuL{
+	width: 100%;
+	height: 50px;
+	float: left;
+	margin-top: 18%;
+	text-align: left;
+	color: white;
+	font-size: 22px;
+}
+.liulText{
+	width: 100%;
+	height: 150px;
+	float: left;
+	color: white;
+    font-size: 14px;
+	line-height: 25px;
+}
+.teachOne{
+	margin-top: 56%;
+}
+
+.active .fourImgTwo{
+	animation:fourImgTwo 1s;
+}
+@keyframes fourImgTwo {
+	0%{
+		transform:translateX(3000%);
+	}
+	80%{
+		transform:translateX(0);
+	}
+	90%{
+		transform:translateX(10%);
+	}
+	100%{
+		transform:translateX(0);
+	}
+}
+.active .teachOne{
+	animation:teachOne 1s;
+}
+@keyframes teachOne {
+		0%{
+		transform:translateX(1200%);
+	}
+	80%{
+		transform:translateX(0);
+	}
+	90%{
+		transform:translateX(10%);
+	}
+	100%{
+		transform:translateX(0);
+	}
+}
+
+
+
+
+.active .fourImgOne{
+	animation:fourImgOne 1s;
+}
+@keyframes fourImgOne {
+	0%{
+		transform:translateX(-3000%);
+	}
+	80%{
+		transform:translateX(0);
+	}
+	90%{
+		transform:translateX(-10%);
+	}
+	100%{
+		transform:translateX(0);
+	}
+}
+.active .teachThree{
+	animation:teachThree 1s;
+}
+@keyframes teachThree {
+		0%{
+		transform:translateX(-1200%);
+	}
+	80%{
+		transform:translateX(0);
+	}
+	90%{
+		transform:translateX(-10%);
+	}
+	100%{
+		transform:translateX(0);
+	}
+}
+
+
+
+
+.active .fourImgThree{
+	animation:fourImgThree 1s;
+}
+@keyframes fourImgThree {
+	0%{
+		transform:translateX(3000%);
+	}
+	80%{
+		transform:translateX(0);
+	}
+	90%{
+		transform:translateX(10%);
+	}
+	100%{
+		transform:translateX(0);
+	}
+}
+.active .teachFour{
+	animation:teachFour 1s;
+}
+@keyframes teachFour {
+	0%{
+		transform:translateX(3000%);
+	}
+	80%{
+		transform:translateX(0);
+	}
+	90%{
+		transform:translateX(10%);
+	}
+	100%{
+		transform:translateX(0);
+	}
+}
+
+
+
+.active .fourImgFour{
+	animation:fourImgFour 1s;
+}
+@keyframes fourImgFour {
+	0%{
+		transform:translateX(-3000%);
+	}
+	80%{
+		transform:translateX(0);
+	}
+	90%{
+		transform:translateX(-10%);
+	}
+	100%{
+		transform:translateX(0);
+	}
+}
+.active .teachTwo{
+	animation:teachTwo 1s;
+}
+@keyframes teachTwo {
+	0%{
+		transform:translateX(-3000%);
+	}
+	80%{
+		transform:translateX(0);
+	}
+	90%{
+		transform:translateX(-10%);
+	}
+	100%{
+		transform:translateX(0);
+	}
+}
+
 
 
 

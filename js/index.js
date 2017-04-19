@@ -157,25 +157,69 @@ window.addEventListener('load',function(){
 		$('.header_right ul li:nth-child(6)').css('transform','translateY(0px)');		
 	});
 	
-      
+      $('.teachOne').hover(function(){
+      	  $('.fourImgTwo').css('transform','rotate(360deg)').css('transition','all 1s');
+      	
+      },function(){
+      	$('.fourImgTwo').css('transform','rotate(0deg)').css('transition','all 1s');
+      })
+
+	$('.FImgOne').hover(function(){
+      	  $('.fourImgTwo').css('transform','rotate(360deg)').css('transition','all 1s');
+      	
+      },function(){
+      	$('.fourImgTwo').css('transform','rotate(0deg)').css('transition','all 1s');
+      })
 
 	
+// 2	
+	
+	$('.teachTwo').hover(function(){
+      	  $('.fourImgFour').css('transform','rotate(360deg)').css('transition','all 1s');
+      	
+      },function(){
+      	$('.fourImgFour').css('transform','rotate(0deg)').css('transition','all 1s');
+      })
+	
+	
+	$('.fourImgFour').hover(function(){
+      	  $('.fourImgFour').css('transform','rotate(360deg)').css('transition','all 1s');
+      	
+      },function(){
+      	$('.fourImgFour').css('transform','rotate(0deg)').css('transition','all 1s');
+      })
 
 	
+//  3	
+	$('.teachThree').hover(function(){
+      	  $('.fourImgOne').css('transform','rotate(360deg)').css('transition','all 1s');
+      	
+      },function(){
+      	$('.fourImgOne').css('transform','rotate(0deg)').css('transition','all 1s');
+      })
+	
+	$('.fourImgOne').hover(function(){
+      	  $('.fourImgOne').css('transform','rotate(360deg)').css('transition','all 1s');
+      	
+      },function(){
+      	$('.fourImgOne').css('transform','rotate(0deg)').css('transition','all 1s');
+      })
 	
 	
+//  4	
+	$('.teachFour').hover(function(){
+      	  $('.fourImgThree').css('transform','rotate(360deg)').css('transition','all 1s');
+      	
+      },function(){
+      	$('.fourImgThree').css('transform','rotate(0deg)').css('transition','all 1s');
+      })
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	$('.fourImgThree').hover(function(){
+      	  $('.fourImgThree').css('transform','rotate(360deg)').css('transition','all 1s');
+      	
+      },function(){
+      	$('.fourImgThree').css('transform','rotate(0deg)').css('transition','all 1s');
+      })
 	
 	
 	
